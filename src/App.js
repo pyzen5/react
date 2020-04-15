@@ -73,12 +73,20 @@ class App extends Component {
   }
 
   render() {
+    const style = {
+      backgroundColor: 'white',
+      font: 'inherit',
+      border: '1px solid blue',
+      padding: '8px',
+      cursor: 'pointer'
+    }
+
     return (
       <div className="App">
       <h1>I'm an Hell</h1>
       <p>Its working</p>
       {/* inefficient */}
-      <button onClick={() => this.switchNameHandler('Iota')}>Switch Name</button>
+      <button style={style} onClick={() => this.switchNameHandler('Iota')}>Switch Name</button>
       <Person name={this.state.persons[0].name} age={this.state.persons[0].age} />
       <Person name={this.state.persons[1].name} age={this.state.persons[1].age} />
       <Person name={this.state.persons[2].name} age="24" click={this.switchNameHandler.bind(this, 'UIOp')} change={this.nameChangedHandler}>
