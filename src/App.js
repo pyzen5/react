@@ -66,7 +66,8 @@ class App extends Component {
       <div className="App">
       <h1>I'm an Hell</h1>
       <p>Its working</p>
-      <button onClick={this.switchNameHandler.bind(this, 'Iota')}>Switch Name</button>
+      {/* inefficient */}
+      <button onClick={() => this.switchNameHandler('Iota')}>Switch Name</button>
       <Person name={this.state.persons[0].name} age={this.state.persons[0].age} />
       <Person name={this.state.persons[1].name} age={this.state.persons[1].age} />
       <Person name="Rax" age="24" click={this.switchNameHandler.bind(this, 'UIOp')}>
