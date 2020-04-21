@@ -15,3 +15,4 @@ const person = (props) => {
 
 // class-based components - this.props
 export default person;
+
