@@ -1,7 +1,8 @@
+import * as Types from "./actionTypes";
+
 export function createCourse(course) {
   // action creator
-  debugger;
-  return { type: "CREATE_COURSE", course }; //action
+  return { type: Types.CREATE_COURSE, course }; //action
 }
 
 // object short hand syntax course: course => course

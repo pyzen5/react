@@ -62,4 +62,9 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
+// #4
+// const mapDispatchToProps = {
+//   createCourse: courseActions.createCourse,
+// };
+
 export default connect(mapStateToProps, mapDispatchToProps)(CouresPage);
